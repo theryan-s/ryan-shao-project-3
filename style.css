@@ -1,3 +1,22 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+img {
+  max-width: 100%;
+  width: 100%; }
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -179,3 +198,41 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0);
   overflow: hidden; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 60%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: "Kumar One", sans-serif;
+  font-weight: 400;
+  background: #fff; }
+
+.row {
+  max-width: 144rem;
+  margin: 0 auto;
+  width: 90%; }
+
+header {
+  background-image: url(../../images/A5F7997C-F084-40FC-9842-6F12E77D9DC0.jpeg);
+  background-repeat: none;
+  height: 100vh;
+  background-position: 50% 30%;
+  opacity: 65%;
+  background-attachment: fixed; }
