@@ -5,3 +5,9 @@
 //add event listener for submit
 //once submission is made, obtain users choice to find results
 //results display on the right side
+
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+});
