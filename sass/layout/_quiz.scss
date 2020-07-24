@@ -1,23 +1,47 @@
-.carousel {
-    background: #EEE;
+
+.one{
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/size.jpg);
 }
 
-.carousel-cell {
-width: 66%;
-height: 200px;
-margin-right: 10px;
-background: #8C8;
-border-radius: 5px;
-counter-increment: carousel-cell;
+.two{
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/trainability.jpg);
 }
 
-/* cell number */
-.carousel-cell:before {
-display: block;
-text-align: center;
-content: counter(carousel-cell);
-line-height: 200px;
-font-size: 80px;
-color: white;
+.three{
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/maintanence.jpg);
 }
-  
+
+.four{
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/activelevel.jpg);
+}
+
+.one,
+.two,
+.three,
+.four{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.submitContainer{
+    position: absolute;
+    bottom: 5%;
+}
+
+.submit{
+    padding: 2rem 4rem;
+    border-radius: 3px transparent;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

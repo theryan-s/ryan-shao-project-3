@@ -1,7 +1,7 @@
 header{
-    background-image: url(../../images/A5F7997C-F084-40FC-9842-6F12E77D9DC0.jpeg);
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(../../images/cover.jpg);
     height: 100vh;
-    background-position: center;
-    opacity: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
