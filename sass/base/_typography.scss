@@ -1,8 +1,68 @@
 h1{
     color: #000;
-    font-size: 15rem;
+    font-size: 12rem;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+
+    @include respond(phone-tab){
+        font-size: 7rem;
+    }
+
+    @include respond(phone){
+        font-size: 6rem;
+    }
 }
 
-p {
+.cover p {
+    width: 80%;
+    padding: 2rem 0 3rem 0;
+    line-height: 4.5rem;
+
+    @include respond(phone-tab){
+        width: 65%;
+        margin-top: 4rem;
+    }
+
+    @include respond(phone){
+        width: 100%;
+        padding: 2rem 0;
+        margin-top: 0;
+    }
+}
+
+h2{
+    padding-bottom: 1rem;
+
+    @include respond(phone){
+        font-size: 4rem;
+    }
+}
+
+.start,
+.submit,
+.restart{
+    display:inline-block;
+    padding: 2rem 6rem;
+    border: 0.1rem solid $color-white;
+    margin: 0 0.6rem 0.6rem 0;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight: 500;
+    color: $color-white;
+    transition: all 0.2s;
+    background-color: $color-black;
+}
+
+.start:hover,
+.submit:hover,
+.restart:hover{
+    color: $color-black;
+    background-color: $color-white;
+}
+
+button{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
 }

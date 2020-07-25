@@ -18,16 +18,16 @@ html {
     }
 
     @include respond(phone-tab) { // width in between phone and tab-port
-        font-size: 60%;
+        font-size: 50%;
     }
 }
 
 body{
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     color: $color-black;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 

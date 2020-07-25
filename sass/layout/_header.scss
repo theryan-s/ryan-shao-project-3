@@ -4,3 +4,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.cover{
+    padding-top: 12.5%;
+
+    @include respond(phone){
+        text-align: center;
+    }
+}

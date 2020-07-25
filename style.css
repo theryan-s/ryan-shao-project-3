@@ -19,7 +19,60 @@ img {
 
 h1 {
   color: #000;
-  font-size: 15rem;
+  font-size: 12rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif; }
+  @media only screen and (max-width: 50em) {
+    h1 {
+      font-size: 7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    h1 {
+      font-size: 6rem; } }
+
+.cover p {
+  width: 80%;
+  padding: 2rem 0 3rem 0;
+  line-height: 4.5rem; }
+  @media only screen and (max-width: 50em) {
+    .cover p {
+      width: 65%;
+      margin-top: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .cover p {
+      width: 100%;
+      padding: 2rem 0;
+      margin-top: 0; } }
+
+h2 {
+  padding-bottom: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    h2 {
+      font-size: 4rem; } }
+
+.start,
+.submit,
+.restart {
+  display: inline-block;
+  padding: 2rem 6rem;
+  border: 0.1rem solid #fff;
+  margin: 0 0.6rem 0.6rem 0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.2s;
+  background-color: #000; }
+
+.start:hover,
+.submit:hover,
+.restart:hover {
+  color: #000;
+  background-color: #fff; }
+
+button {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
 *,
@@ -39,14 +92,14 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 50em) {
     html {
-      font-size: 60%; } }
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #000;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase; }
 
 .row {
@@ -59,6 +112,12 @@ header {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.cover {
+  padding-top: 12.5%; }
+  @media only screen and (max-width: 37.5em) {
+    .cover {
+      text-align: center; } }
 
 .question1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../images/size.jpg); }
@@ -86,29 +145,101 @@ header {
   flex-direction: column;
   position: relative; }
 
-.wrapper {
+.option {
+  padding: 1rem 0; }
+
+.wrapper,
+.resultWrap {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative;
+  padding: 5rem;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  border-radius: .3rem; }
 
 .submitContainer {
   position: absolute;
   bottom: 5%; }
 
-.submit {
-  padding: 2rem 4rem;
-  border-radius: 3px transparent;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-
 .result {
-  display: flex;
-  height: 100vh;
+  display: none;
+  height: 93vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center; }
 
+.resultWrap {
+  height: 20vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .resultWrap {
+      height: 30vh; } }
+
+.restart {
+  padding: 2rem 4rem;
+  margin-top: 2rem; }
+
+@media only screen and (max-width: 37.5em) {
+  h3 {
+    font-size: 4rem; } }
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px; }
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666; }
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff; }
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background: #000;
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
 footer {
   color: #fff;
   background-color: #000;
   padding: 2rem;
-  text-align: center; }
+  text-align: center;
+  height: 7vh;
+  font-size: 2rem; }

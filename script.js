@@ -404,13 +404,8 @@ $(function(){
         const altText = result.alt;
         
         //Display results
-        $('.choice').text(`${result.dogbreed}`);
-        // $('.result').attr({
-        //     "src": imgURL, 
-        //     "alt": altText,
-        // });
+        $('.choice').text(`You should get a ${result.dogbreed}!`);
         $('.result').css("background-image", "url(" + imgURL + ")");
-
         $('.result').css('display', 'flex');
 
         //Smooth scroll down to results
@@ -419,9 +414,10 @@ $(function(){
         }, 
         'slow');
         });
-
+    
+    //Try again button
     $('.restart').on('click', function(){
-        location.reload();
+        location.reload(true);
         $('html').scrollTop(0);
     });
 });

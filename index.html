@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Raleway&display=swap" rel="stylesheet">
 
     <title>FUR FRIENDS SELECTOR | Ryan Shao</title>
 </head>
@@ -15,7 +13,7 @@
     <header class="cover">
         <div class="row">
             <h1>Fur Friends Selector</h1>
-            <p>Congrats on looking to become a newly dog owner! In the questionnaire below, please choose your preference among the selections. With your selections, we'll be able to determine which dog breed fits you best!</p>
+            <p>Congrats on looking to become a newly dog owner! In the questionnaire below, please choose your preferences. Based off of your selections, we'll be able to determine which dog breed fits you best!</p>
         <button class="start" type="button">Start now!</button>
         </div>
     </header>
@@ -39,24 +37,24 @@
                     <h2>Trainability?</h2>
                     <div class="option">
                         <input type="radio" id="difficult"  name="trainability" value=0 class="input2">
-                        <label for="difficult">Basic commands is sufficient</label>
+                        <label for="difficult">Basic obedience</label>
                     </div>
                     <div class="option">
                         <input type="radio" id="very"  name="trainability" value=1 class="input2">
-                        <label for="very">You want your dog to learn ALL the tricks</label>
+                        <label for="very">Advanced obedience</label>
                     </div>
                 </div>
             </div>
             <div class="question3">
                 <div class="wrapper">
-                    <h2>Maintenance and Grooming?</h2>
+                    <h2>Maintenance</h2>
                     <div class="option">
                         <input type="radio" id="easy"  name="maintenance" value=0 class="input3">
-                        <label for="easy">Easy to take care</label>
+                        <label for="easy">Little to no maintenance</label>
                     </div>
                     <div class="option">
                         <input type="radio" id="hard"  name="maintenance" value=1 class="input3">
-                        <label for="hard">Able to attend to at least once a week</label>
+                        <label for="hard">Heavy maintenance and care</label>
                     </div>
                 </div>
             </div>
@@ -77,18 +75,16 @@
                 </div>
             </div>
         </form>
-
         <section class="result">
-            <div class="row">
+            <div class="resultWrap">
                 <h3 class="choice"></h3>
-                <!-- <img src="" alt=""> -->
                 <button id="restart" class="restart">Try again!</button>
             </div>
         </section>
     </main> 
     <footer>
         <div class="row">
-            <p>Created by Ryan Shao &copy - 2020</p>
+            <p>Created by Ryan Shao &copy 2020</p>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
