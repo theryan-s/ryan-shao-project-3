@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
 
     <title>FUR FRIENDS SELECTOR | Ryan Shao</title>
 </head>
@@ -19,54 +21,54 @@
     </header>
     <main>
         <form class="questions">
-            <div class="one">
+            <div class="question1">
                 <div class="wrapper">
                     <h2>Size?</h2>
                     <div class="option">
-                        <input type="radio" id="small"  name="size" value="small">
+                        <input type="radio" id="small"  name="size" value="small" class="input1">
                         <label for="small">Small</label>
                     </div>
                     <div class="option">
-                        <input type="radio" id="midLarge"  name="size" value="midLarge">
+                        <input type="radio" id="midLarge"  name="size" value="midLarge" class="input1">
                         <label for="midLarge">Medium to Large</label>
                     </div>
                 </div>
             </div>    
-            <div class="two">
+            <div class="question2">
                 <div class="wrapper">
                     <h2>Trainability?</h2>
                     <div class="option">
-                        <input type="radio" id="difficult"  name="trainability" value=0>
+                        <input type="radio" id="difficult"  name="trainability" value=0 class="input2">
                         <label for="difficult">Basic commands is sufficient</label>
                     </div>
                     <div class="option">
-                        <input type="radio" id="very"  name="trainability" value=1>
+                        <input type="radio" id="very"  name="trainability" value=1 class="input2">
                         <label for="very">You want your dog to learn ALL the tricks</label>
                     </div>
                 </div>
             </div>
-            <div class="three">
+            <div class="question3">
                 <div class="wrapper">
                     <h2>Maintenance and Grooming?</h2>
                     <div class="option">
-                        <input type="radio" id="easy"  name="maintenance" value=0>
+                        <input type="radio" id="easy"  name="maintenance" value=0 class="input3">
                         <label for="easy">Easy to take care</label>
                     </div>
                     <div class="option">
-                        <input type="radio" id="hard"  name="maintenance" value=1>
+                        <input type="radio" id="hard"  name="maintenance" value=1 class="input3">
                         <label for="hard">Able to attend to at least once a week</label>
                     </div>
                 </div>
             </div>
-            <div class="four">
+            <div class="question4">
                 <div class="wrapper">                                   
                     <h2>Active Level?</h2>
                     <div class="option">
-                        <input type="radio" id="lazy"  name="activeness" value=0>
+                        <input type="radio" id="lazy"  name="activeness" value=0 class="input4">
                         <label for="lazy">A couple walks a day</label>
                     </div>
                     <div class="option">
-                        <input type="radio" id="super active"  name="activeness" value=1>
+                        <input type="radio" id="super active"  name="activeness" value=1 class="input4">
                         <label for="super active">Goes on runs with you</label>
                     </div>
                 </div>
@@ -77,8 +79,11 @@
         </form>
 
         <section class="result">
-            <h3 class="choice"></h3>
-            <img src="" alt="">
+            <div class="row">
+                <h3 class="choice"></h3>
+                <!-- <img src="" alt=""> -->
+                <button id="restart" class="restart">Try again!</button>
+            </div>
         </section>
     </main> 
     <footer>

@@ -151,11 +151,11 @@ const breeds = {
         },
 
         {
-            dogbreed: "Border Terrier",
+            dogbreed: "Miniature Schnauzer",
             maintenance: 1,
             trainability: 1,
             activeness: 1,
-            url: '../images/borderterrier.jpg',
+            url: '../images/miniatureschnauzer.jpg',
             alt: 'Puppy Border Terrier lying on a rock'
         },
     ],
@@ -340,11 +340,31 @@ $(function(){
 
     //Slow scroll from start to first slide
     $('.start').on('click', function() {
-        $('html,body').animate({
+        $('html, body').animate({
             scrollTop: $(".questions").offset().top
-        }, 'slow');
+        }, 
+        'slow'
+        );
     });
 
+    for(let i = 1; i <= 4; i++){
+        if(i <=2 ){
+            $(`.input${i}`).click(function() {
+                $('html,body').animate({
+                    scrollTop: $(`.question${i+1}`).offset().top
+                },
+                    'slow');
+            });
+        } else{
+            $(`.input${i}`).click(function() {
+                $('html,body').animate({
+                    scrollTop: $(`.submit`).offset().top
+                },
+                    'slow');
+            });
+        }
+    }
+    
     $('form').on('submit', function(event){
         event.preventDefault();
 
@@ -385,9 +405,24 @@ $(function(){
         
         //Display results
         $('.choice').text(`${result.dogbreed}`);
-        $('.result img').attr({
-            "src": imgURL, 
-            "alt": altText,
+        // $('.result').attr({
+        //     "src": imgURL, 
+        //     "alt": altText,
+        // });
+        $('.result').css("background-image", "url(" + imgURL + ")");
+
+        $('.result').css('display', 'flex');
+
+        //Smooth scroll down to results
+        $('html, body').animate({
+            scrollTop: $(".result").offset().top
+        }, 
+        'slow');
         });
+
+    $('.restart').on('click', function(){
+        location.reload();
+        $('html').scrollTop(0);
     });
 });
+

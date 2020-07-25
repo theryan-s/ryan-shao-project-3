@@ -1,24 +1,24 @@
 
-.one{
+.question1{
     background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/size.jpg);
 }
 
-.two{
+.question2{
     background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/trainability.jpg);
 }
 
-.three{
+.question3{
     background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/maintanence.jpg);
 }
 
-.four{
+.question4{
     background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../images/activelevel.jpg);
 }
 
-.one,
-.two,
-.three,
-.four{
+.question1,
+.question2,
+.question3,
+.question4{
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,4 +44,13 @@
     padding: 2rem 4rem;
     border-radius: 3px transparent;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.result{
+    display: flex; //CHANGE AFTER
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
 }
