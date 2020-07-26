@@ -27,7 +27,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 0,
-            url: 'images/shihtzu.jpg',
+            url: './images/shihtzu.jpg',
             alt: 'Shih Tzu in a bag'
         },
 
@@ -36,7 +36,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 0,
-            url: 'images/japchin.jpg',
+            url: './images/japchin.jpg',
             alt: 'Japanese Chin dog on the grass'
         },
         //Small, maintenance: 0, trainability: 1, activeness: 0
@@ -46,7 +46,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 0,
-            url: '../images/papillon.jpg',
+            url: './images/papillon.jpg',
             alt: 'Papillon chilling on a comfy rag'
         },
 
@@ -55,7 +55,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 0,
-            url: '../images/pug.jpg',
+            url: './images/pug.jpg',
             alt: 'Pug lying on floor'
         },
 
@@ -66,7 +66,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 1,
-            url: '../images/frenchbulldog.jpg',
+            url: './images/frenchbulldog.jpg',
             alt: 'French bulldog glaring impatiently'
         },
 
@@ -75,7 +75,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 1,
-            url: '../images/cavalierking.jpg',
+            url: './images/cavalierking.jpg',
             alt: 'Baby Cavalier King looking up'
         },
 
@@ -85,7 +85,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 0,
-            url: '../images/bichonfrise.jpg',
+            url: './images/bichonfrise.jpg',
             alt: 'Bichon Frise chilling on the grass field'
         },
         
@@ -94,7 +94,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 0,
-            url: '../images/cotondetulear.jpg',
+            url: './images/cotondetulear.jpg',
             alt: 'Coton de Tulear running'
         },
 
@@ -105,7 +105,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 1,
-            url: '../images/beagle.jpg',
+            url: './images/beagle.jpg',
             alt: 'Beagle looking upwards'
         },
 
@@ -114,7 +114,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 1,
-            url: '../images/jackrussel.jpg',
+            url: './images/jackrussel.jpg',
             alt: 'Jack Russel looking at you'
         },
 
@@ -126,7 +126,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 1,
-            url: '../images/shiba.jpg',
+            url: './images/shiba.jpg',
             alt: 'White Shiba looking to the distance'
         },
 
@@ -135,7 +135,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 1,
-            url: '../images/akita.jpg',
+            url: './images/akita.jpg',
             alt: 'Akita looking innocently'
         },
 
@@ -146,7 +146,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 1,
-            url: '../images/corgi.jpg',
+            url: './images/corgi.jpg',
             alt: 'KIWI THE CORGI AKA MY DOG'
         },
 
@@ -155,7 +155,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 1,
-            url: '../images/miniatureschnauzer.jpg',
+            url: './images/miniatureschnauzer.jpg',
             alt: 'Puppy Border Terrier lying on a rock'
         },
     ],
@@ -170,7 +170,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 0,
-            url: '../images/chowchow.jpg',
+            url: './images/chowchow.jpg',
             alt: 'Chow chow chilling in the snow'
         },
 
@@ -179,7 +179,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 0,
-            url: '../images/tibetanmastiff.jpg',
+            url: './images/tibetanmastiff.jpg',
             alt: 'Tibetan Mastiff standing'
 
         },
@@ -191,7 +191,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 0,
-            url: '../images/bulldog.jpg',
+            url: './images/bulldog.jpg',
             alt: 'Bulldog chilling in the leaves'
         },
 
@@ -200,7 +200,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 0,
-            url: '../images/bullterrier.jpg',
+            url: './images/bullterrier.jpg',
             alt: 'Bull Terrier running on a field'
         },
 
@@ -210,7 +210,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 0,
-            url: '../images/cockerspaniel.jpg',
+            url: './images/cockerspaniel.jpg',
             alt: 'Cocker spaniel soon to fall asleep'
         },
 
@@ -219,7 +219,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 0,
-            url: '../images/poodle.jpg',
+            url: './images/poodle.jpg',
             alt: 'Poodle sneezing'
         },
 
@@ -230,7 +230,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 1,
-            url: '../images/boxer.jpg',
+            url: './images/boxer.jpg',
             alt: 'Boxer dog smiling'
         },
 
@@ -239,7 +239,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 1,
-            url: '../images/pitbull.jpg',
+            url: './images/pitbull.jpg',
             alt: 'Pitbull lying underneath a table'
         },
 
@@ -250,7 +250,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 0,
-            url: '../images/samoyed.jpg',
+            url: './images/samoyed.jpg',
             alt: 'Samoyed sleeping comfortably'
         },
 
@@ -259,7 +259,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 0,
-            url: '../images/bernesemountain.jpg',
+            url: './images/bernesemountain.jpg',
             alt:'Bernese Mountain dog enjoying the breeze on a field'
         },
 
@@ -270,7 +270,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 1,
-            url: '../images/australianshepherd.jpg',
+            url: './images/australianshepherd.jpg',
             alt: 'Baby Australian Shepherd looking at mom'
         },
 
@@ -279,7 +279,7 @@ const breeds = {
             maintenance: 0,
             trainability: 1,
             activeness: 1,
-            url: '../images/bordercollie.jpg',
+            url: './images/bordercollie.jpg',
             alt: 'Border Collie chilling on wooden floor'
         },
 
@@ -290,7 +290,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 1,
-            url: '../images/dalmatian.jpg',
+            url: './images/dalmatian.jpg',
             alt: 'Dalmatian chilling on the beach'
         },
 
@@ -299,7 +299,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 1,
-            url: '../images/dobermann.jpg',
+            url: './images/dobermann.jpg',
             alt: 'Dobermann chewing on a stick'
         },
 
@@ -309,7 +309,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 1,
-            url: '../images/germanshepherd.jpg',
+            url: './images/germanshepherd.jpg',
             alt: 'German Shepherd chilling'
         },
 
@@ -318,7 +318,7 @@ const breeds = {
             maintenance: 1,
             trainability: 1,
             activeness: 1,
-            url: '../images/goldenretriever.jpg',
+            url: './images/goldenretriever.jpg',
             alt: 'Golden Retriever chilling in a field'
         },
         
@@ -336,7 +336,9 @@ function randomItem(optionsArray) {
     return optionsArray[index];
 }
 
-$(function(){
+$(document).ready(function(){
+    //Force scroll position to top at page refresh
+    $('html, body').animate({scrollTop: 0}, 100);
 
     //Slow scroll from start to first slide
     $('.start').on('click', function() {
