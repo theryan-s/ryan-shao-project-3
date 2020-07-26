@@ -8,7 +8,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 0,
-            url: 'images/chihuahua.jpg',
+            url: './images/chihuahua.jpg',
             alt: 'Chihuahua lying down'
         },
         
@@ -17,7 +17,7 @@ const breeds = {
             maintenance: 0,
             trainability: 0,
             activeness: 0,
-            url: 'images/chipoo.jpg',
+            url: './images/chipoo.jpg',
             alt: 'Chi-Poo wearing a red dress'
         },
 
