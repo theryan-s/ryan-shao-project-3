@@ -27,7 +27,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 0,
-            url: '../images/shihtzu.jpg',
+            url: 'images/shihtzu.jpg',
             alt: 'Shih Tzu in a bag'
         },
 
@@ -36,7 +36,7 @@ const breeds = {
             maintenance: 1,
             trainability: 0,
             activeness: 0,
-            url: '../images/japchin.jpg',
+            url: 'images/japchin.jpg',
             alt: 'Japanese Chin dog on the grass'
         },
         //Small, maintenance: 0, trainability: 1, activeness: 0
