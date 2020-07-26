@@ -13,12 +13,12 @@ const breeds = {
         },
         
         {
-            dogbreed: "Chi-Poo",
+            dogbreed: "Pomeranian",
             maintenance: 0,
             trainability: 0,
             activeness: 0,
-            url: './images/chipoo.jpg',
-            alt: 'Chi-Poo wearing a red dress'
+            url: './images/pomeranian.jpg',
+            alt: 'Pomeranian chilling in the grass'
         },
 
         //Small, maintenance: 1, trainability: 0, activeness: 0
@@ -349,6 +349,7 @@ $(document).ready(function(){
         );
     });
 
+    //Increment slides as each option is pressed
     for(let i = 1; i <= 4; i++){
         if(i <=2 ){
             $(`.input${i}`).click(function() {
@@ -412,7 +413,7 @@ $(document).ready(function(){
 
         //Smooth scroll down to results
         $('html, body').animate({
-            scrollTop: $(".result").offset().top
+            scrollTop: $("footer").offset().top
         }, 
         'slow');
         });
