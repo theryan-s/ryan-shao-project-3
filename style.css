@@ -24,24 +24,29 @@ h1 {
   font-family: "Montserrat", sans-serif; }
   @media only screen and (max-width: 50em) {
     h1 {
-      font-size: 7rem; } }
+      font-size: 7rem;
+      width: 70%; } }
   @media only screen and (max-width: 37.5em) {
     h1 {
-      font-size: 6rem; } }
+      font-size: 6rem;
+      width: 100%; } }
 
 .cover p {
-  width: 80%;
+  width: 60%;
   padding: 2rem 0 3rem 0;
-  line-height: 4.5rem; }
+  line-height: 4.5rem;
+  background: rgba(255, 255, 255, 0.837);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  border-radius: .3rem;
+  padding: 2rem;
+  margin-bottom: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .cover p {
+      width: 80%; } }
   @media only screen and (max-width: 50em) {
     .cover p {
-      width: 65%;
-      margin-top: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .cover p {
-      width: 100%;
-      padding: 2rem 0;
-      margin-top: 0; } }
+      margin-top: 4rem;
+      width: 100%; } }
 
 h2 {
   padding-bottom: 1rem; }
@@ -54,7 +59,6 @@ h2 {
 .restart {
   display: inline-block;
   padding: 2rem 6rem;
-  margin: 0 0.6rem 0.6rem 0;
   border-radius: 0.3rem;
   box-sizing: border-box;
   text-decoration: none;
@@ -68,6 +72,10 @@ h2 {
 .restart:hover {
   color: #000;
   background-color: #fff; }
+
+@media only screen and (max-width: 50em) {
+  .start {
+    margin-top: 4rem; } }
 
 button {
   font-size: 2rem;
@@ -118,13 +126,12 @@ header {
     .cover {
       text-align: center; } }
 
-.cover p {
-  background: rgba(255, 255, 255, 0.837);
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
-  border-radius: .3rem;
-  padding: 2rem;
-  width: 60%;
-  margin-bottom: 3rem; }
+@media only screen and (max-width: 50em) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 .question1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./images/size.jpg); }
@@ -154,6 +161,9 @@ header {
 
 .option {
   padding: 1rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .option {
+      margin-bottom: 1rem; } }
 
 .wrapper,
 .resultWrap {
@@ -207,6 +217,10 @@ header {
   line-height: 2rem;
   display: inline-block;
   color: #000; }
+  @media only screen and (max-width: 37.5em) {
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label {
+      line-height: 3rem; } }
 
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {

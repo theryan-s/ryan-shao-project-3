@@ -32,6 +32,10 @@
 
 .option{
     padding: 1rem 0;
+
+    @include respond(phone){
+        margin-bottom: 1rem;
+    }
 }
 
 .wrapper,
@@ -95,6 +99,10 @@ h3{
     line-height: 2rem;
     display: inline-block;
     color: $color-black;
+
+    @include respond(phone){
+        line-height: 3rem;
+    }
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {

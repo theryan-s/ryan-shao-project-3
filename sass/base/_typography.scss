@@ -6,27 +6,32 @@ h1{
 
     @include respond(phone-tab){
         font-size: 7rem;
+        width: 70%;
     }
 
     @include respond(phone){
         font-size: 6rem;
+        width: 100%;
     }
 }
 
 .cover p {
-    width: 80%;
+    width: 60%;
     padding: 2rem 0 3rem 0;
     line-height: 4.5rem;
+    background: rgba(255, 255, 255, 0.837);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.5);
+    border-radius: .3rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
 
-    @include respond(phone-tab){
-        width: 65%;
-        margin-top: 4rem;
+    @include respond(tab-port){
+        width: 80%;
     }
 
-    @include respond(phone){
+    @include respond(phone-tab){
+        margin-top: 4rem;
         width: 100%;
-        padding: 2rem 0;
-        margin-top: 0;
     }
 }
 
@@ -43,7 +48,6 @@ h2{
 .restart{
     display:inline-block;
     padding: 2rem 6rem;
-    margin: 0 0.6rem 0.6rem 0;
     border-radius: 0.3rem;
     box-sizing: border-box;
     text-decoration:none;
@@ -58,6 +62,13 @@ h2{
 .restart:hover{
     color: $color-black;
     background-color: $color-white;
+}
+
+.start{
+
+    @include respond(phone-tab){
+        margin-top: 4rem;
+    }
 }
 
 button{
