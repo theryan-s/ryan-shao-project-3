@@ -40,7 +40,7 @@
     flex-direction: column;
     position: relative;
     padding: 5rem;
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.837);
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.5);
     border-radius: .3rem;
 }
@@ -90,11 +90,11 @@ h3{
 [type="radio"]:not(:checked) + label
 {
     position: relative;
-    padding-left: 28px;
+    padding-left: 2.8rem;
     cursor: pointer;
-    line-height: 20px;
+    line-height: 2rem;
     display: inline-block;
-    color: #666;
+    color: $color-grey;
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
@@ -102,9 +102,9 @@ h3{
     position: absolute;
     left: 0;
     top: 0;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #ddd;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid $color-grey;
     border-radius: 100%;
     background: #fff;
 }
@@ -118,16 +118,12 @@ h3{
     top: 3.5px;
     left: 3.5px;
     border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
 }
 [type="radio"]:not(:checked) + label:after {
     opacity: 0;
-    -webkit-transform: scale(0);
     transform: scale(0);
 }
 [type="radio"]:checked + label:after {
     opacity: 1;
-    -webkit-transform: scale(1);
     transform: scale(1);
 }

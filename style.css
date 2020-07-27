@@ -54,7 +54,6 @@ h2 {
 .restart {
   display: inline-block;
   padding: 2rem 6rem;
-  border: 0.1rem solid #fff;
   margin: 0 0.6rem 0.6rem 0;
   border-radius: 0.3rem;
   box-sizing: border-box;
@@ -108,7 +107,7 @@ body {
   width: 90%; }
 
 header {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./images/cover.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./images/cover2.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -118,6 +117,14 @@ header {
   @media only screen and (max-width: 37.5em) {
     .cover {
       text-align: center; } }
+
+.cover p {
+  background: rgba(255, 255, 255, 0.837);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  border-radius: .3rem;
+  padding: 2rem;
+  width: 60%;
+  margin-bottom: 3rem; }
 
 .question1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(./images/size.jpg); }
@@ -154,7 +161,7 @@ header {
   flex-direction: column;
   position: relative;
   padding: 5rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.837);
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
   border-radius: .3rem; }
 
@@ -195,9 +202,9 @@ header {
 [type="radio"]:checked + label,
 [type="radio"]:not(:checked) + label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 2.8rem;
   cursor: pointer;
-  line-height: 20px;
+  line-height: 2rem;
   display: inline-block;
   color: #666; }
 
@@ -207,9 +214,9 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ddd;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid #666;
   border-radius: 100%;
   background: #fff; }
 
@@ -222,18 +229,14 @@ header {
   position: absolute;
   top: 3.5px;
   left: 3.5px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  border-radius: 100%; }
 
 [type="radio"]:not(:checked) + label:after {
   opacity: 0;
-  -webkit-transform: scale(0);
   transform: scale(0); }
 
 [type="radio"]:checked + label:after {
   opacity: 1;
-  -webkit-transform: scale(1);
   transform: scale(1); }
 
 footer {

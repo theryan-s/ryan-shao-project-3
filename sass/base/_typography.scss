@@ -1,5 +1,5 @@
 h1{
-    color: #000;
+    color: $color-black;
     font-size: 12rem;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
@@ -43,7 +43,6 @@ h2{
 .restart{
     display:inline-block;
     padding: 2rem 6rem;
-    border: 0.1rem solid $color-white;
     margin: 0 0.6rem 0.6rem 0;
     border-radius: 0.3rem;
     box-sizing: border-box;
