@@ -94,7 +94,7 @@ h3{
     cursor: pointer;
     line-height: 2rem;
     display: inline-block;
-    color: $color-grey;
+    color: $color-black;
 }
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
@@ -106,7 +106,7 @@ h3{
     height: 1.8rem;
     border: 1px solid $color-grey;
     border-radius: 100%;
-    background: #fff;
+    background: $color-white;
 }
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {

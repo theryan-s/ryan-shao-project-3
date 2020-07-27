@@ -206,7 +206,7 @@ header {
   cursor: pointer;
   line-height: 2rem;
   display: inline-block;
-  color: #666; }
+  color: #000; }
 
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
@@ -216,7 +216,7 @@ header {
   top: 0;
   width: 1.8rem;
   height: 1.8rem;
-  border: 1px solid #666;
+  border: 1px solid #ddd;
   border-radius: 100%;
   background: #fff; }
 
