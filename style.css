@@ -54,7 +54,6 @@ h2 {
 .restart {
   display: inline-block;
   padding: 2rem 6rem;
-  border: 0.1rem solid #fff;
   margin: 0 0.6rem 0.6rem 0;
   border-radius: 0.3rem;
   box-sizing: border-box;
@@ -195,11 +194,11 @@ header {
 [type="radio"]:checked + label,
 [type="radio"]:not(:checked) + label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 2.8rem;
   cursor: pointer;
-  line-height: 20px;
+  line-height: 2rem;
   display: inline-block;
-  color: #666; }
+  color: #000; }
 
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
@@ -207,8 +206,8 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   border: 1px solid #ddd;
   border-radius: 100%;
   background: #fff; }
